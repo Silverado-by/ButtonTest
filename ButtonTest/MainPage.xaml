@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ButtonTest.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            BackgroundColor="DarkGray"
+            Spacing="25">
+
+            <Button
+                Text="short text" 
+                WidthRequest="180"
+                SemanticProperties.Hint="Counts the number of times you click"
+                HorizontalOptions="Fill" />
+
+            <Button
+                Text="some very long text that doesn't fit in the button normally and takes four lines of text" 
+                WidthRequest="180"
+                LineBreakMode="WordWrap"
+                SemanticProperties.Hint="Counts the number of times you click"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
